@@ -58,7 +58,7 @@ export default function AboutScreen() {
 
       <div className="screen-content">
 
-        {/* Bio — fully expanded, no toggle */}
+{/* Bio — fully expanded, no toggle */}
         <p className="section-label" style={{ marginTop: 0 }}>About Me</p>
         <div className="card">
           <p style={{ fontSize: "0.9rem", lineHeight: 1.78, color: "#333", textAlign: "justify" }}>
@@ -71,6 +71,14 @@ export default function AboutScreen() {
             functional remodelling in diseased tissues. More broadly, I aim to investigate how
             fundamental stress response mechanisms can be leveraged to better understand pathological
             progression and identify new points of therapeutic vulnerability.
+          </p>
+          <p style={{ fontSize: "0.9rem", lineHeight: 1.78, color: "#333", marginTop: "0.85rem", textAlign: "justify" }}>
+            Alongside hands-on bench work, I have developed a strong interest in computational and
+            omics-based approaches to dissect these mechanisms at scale: integrating transcriptomic,
+            proteomic, and genomic data (<strong>TCGA</strong>, <strong>CCLE</strong>, label-free
+            proteomics) to identify pathway signatures, correlate molecular features with clinical
+            outcomes, and build multi-omics analysis pipelines in <strong>R</strong>. I enjoy moving
+            between bench experiments and data-driven analysis, using each to inform and validate the other.
           </p>
           <p style={{ fontSize: "0.9rem", lineHeight: 1.78, color: "#333", marginTop: "0.85rem", textAlign: "justify" }}>
             I am currently <strong>seeking postdoctoral opportunities</strong> to expand my expertise,

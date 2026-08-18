@@ -104,8 +104,32 @@ export default function ResearchScreen({ onOpen }) {
   return (
     <div className="screen-content">
 
+      {/* ── Publications ── */}
+      <p className="section-label" style={{ marginTop: 0 }}>Publications</p>
+      {PUBLICATIONS.map((p, i) => (
+        <a
+          key={i}
+          href={p.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "flex", gap: "0.75rem", alignItems: "flex-start",
+            background: "#fff", border: "1px solid #dde6e8",
+            borderLeft: "3px solid #2a6b7c", borderRadius: "4px",
+            padding: "0.85rem 1rem", marginBottom: "0.6rem",
+            textDecoration: "none",
+          }}
+        >
+          <span style={{ fontSize: "0.95rem", flexShrink: 0 }}>📄</span>
+          <p style={{ fontFamily: "Georgia, serif", fontSize: "0.84rem", color: "#1a1a2e", lineHeight: 1.5, flex: 1 }}>
+            {p.title}
+          </p>
+          <span style={{ color: "#2a6b7c", fontSize: "0.76rem", flexShrink: 0 }}>{p.year}</span>
+        </a>
+      ))}
+
       {/* ── Research Experience ── */}
-      <p className="section-label" style={{ marginTop: 0 }}>Research Experience</p>
+      <p className="section-label">Research Experience</p>
       {RESEARCH.map((item) => (
         <button
           key={item.id}
@@ -142,30 +166,6 @@ export default function ResearchScreen({ onOpen }) {
             </span>
           </div>
         </button>
-      ))}
-
-      {/* ── Publications ── */}
-      <p className="section-label">Publications</p>
-      {PUBLICATIONS.map((p, i) => (
-        <a
-          key={i}
-          href={p.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            display: "flex", gap: "0.75rem", alignItems: "flex-start",
-            background: "#fff", border: "1px solid #dde6e8",
-            borderLeft: "3px solid #2a6b7c", borderRadius: "4px",
-            padding: "0.85rem 1rem", marginBottom: "0.6rem",
-            textDecoration: "none",
-          }}
-        >
-          <span style={{ fontSize: "0.95rem", flexShrink: 0 }}>📄</span>
-          <p style={{ fontFamily: "Georgia, serif", fontSize: "0.84rem", color: "#1a1a2e", lineHeight: 1.5, flex: 1 }}>
-            {p.title}
-          </p>
-          <span style={{ color: "#2a6b7c", fontSize: "0.76rem", flexShrink: 0 }}>{p.year}</span>
-        </a>
       ))}
 
       {/* ── Funding & Awards ── */}

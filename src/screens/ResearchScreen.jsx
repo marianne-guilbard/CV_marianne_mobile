@@ -54,6 +54,7 @@ export const RESEARCH = [
 ];
 
 const PUBLICATIONS = [
+  { title: "Complementary intra- and extracellular AGR2 activities support epithelial ovarian cancer cell aggressiveness", href: "https://www.nature.com/articles/s41388-026-03938-y", year: "2026" },
   { title: "PhD Thesis — Study of the functions of the secreted protein disulfide isomerase, AGR2, in tumor adaptation", href: "https://theses.hal.science/tel-05558177", year: "2026" },
   { title: "Modulation of PDI Functions by Localization: The Example of the Anterior Gradient Family", href: "https://doi.org/10.1089/ars.2024.0561", year: "2025" },
   { title: "Endoplasmic Reticulum Homeostasis — From Molecules to Organisms: Report on the 14th International Calreticulin Workshop", href: "https://doi.org/10.1111/jcmm.17840", year: "2023" },
@@ -71,6 +72,7 @@ const ORAL = [
   { title: "ENLIGHT Congress", venue: "Bordeaux · Sep 2023", topic: "AGR2 & Gynecological cancers" },
   { title: "BRIC Scientific Seminar", venue: "Bordeaux · Jan 2026", topic: "Complementary intra- and extracellular activities of AGR2 in tumorigenesis" },
   { title: "Biological and Medical Sciences Dept. Annual Day", venue: "Bordeaux · Dec 2024", topic: null },
+  { title: "BRIC Scientific Seminar", venue: "Bordeaux · Dec 2025", topic: "Endoplasmic reticulum proteostasis in high grade serous ovarian cancer" },
 ];
 
 const POSTERS = [

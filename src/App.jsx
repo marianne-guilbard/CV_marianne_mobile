@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AboutScreen from "./screens/AboutScreen";
 import ResearchScreen from "./screens/ResearchScreen";
+import SkillsScreen from "./screens/SkillsScreen";
 import BeyondScreen from "./screens/BeyondScreen";
 import DetailSheet from "./components/DetailSheet";
 
@@ -22,6 +23,19 @@ function IconResearch() {
   );
 }
 
+function IconSkills() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="5" r="2"/>
+      <circle cx="5" cy="17" r="2"/>
+      <circle cx="19" cy="17" r="2"/>
+      <line x1="12" y1="7" x2="5" y2="15.3"/>
+      <line x1="12" y1="7" x2="19" y2="15.3"/>
+      <line x1="6.7" y1="17" x2="17.3" y2="17"/>
+    </svg>
+  );
+}
+
 function IconBeyond() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -35,6 +49,7 @@ function IconBeyond() {
 const TABS = [
   { id: "about",    label: "About",    Icon: IconAbout },
   { id: "research", label: "Research", Icon: IconResearch },
+  { id: "skills",   label: "Skills",   Icon: IconSkills },
   { id: "beyond",   label: "Beyond",   Icon: IconBeyond },
 ];
 
@@ -64,6 +79,7 @@ export default function App() {
       <div className="screen">
         {tab === "about"    && <AboutScreen />}
         {tab === "research" && <ResearchScreen onOpen={setSheet} />}
+        {tab === "skills"   && <SkillsScreen />}
         {tab === "beyond"   && <BeyondScreen />}
       </div>
 

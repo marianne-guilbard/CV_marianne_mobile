@@ -101,6 +101,7 @@ export default function AboutScreen() {
         <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
           {[
             { label: "Google Scholar", href: "https://scholar.google.com/citations?user=8LgCwdwAAAAJ&hl=fr", emoji: "🎓" },
+            { label: "LinkedIn",       href: "https://fr.linkedin.com/in/marianne-guilbard-7578301aa/", emoji: "💼" },
             { label: "ResearchGate",   href: "https://www.researchgate.net/profile/Marianne-Guilbard", emoji: "🔬" },
             { label: "Email",          href: "mailto:marianne.guilbard@gmail.com", emoji: "✉️" },
           ].map(({ label, href, emoji }) => (
